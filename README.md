@@ -9,7 +9,7 @@ Low Light Homomorphic filtering Network
   
    You can test our model using Resnet50, VGG16, MobileNetv2, DenseNet, or SqueezeNet feature extractors. You just need to specify the directory of your testing images and model      weights. 
 
-    !python3 eval.py --device=0 --featureExt='resnet50' --test_Dir='./ /data/testImages' \
+    !python3 eval.py --device=0 --featureExt='resnet50' --test_Dir='./data/testImages' \
      --ckpt='./exp1_ckpt.pth' \
      --results_Dir='./results'
  
