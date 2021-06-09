@@ -7,14 +7,14 @@ Low Light Homomorphic filtering Network
   
   A. 	**Testing:**
   
-   You can test our model using [Resnet50](), [VGG16](), [MobileNetv2](), [DenseNet](), or [SqueezeNet]() feature extractors (weights through hyperlinks). You just need to specify the directory of your testing images and model weights. 
+   You can test our model using [Resnet50](https://drive.google.com/file/d/1xFOIHuhIIjq14srgmQGfexl1d2ilHOxw/view?usp=sharing), [VGG16](https://drive.google.com/file/d/1RyBJbpSEw-WQhlpQMhvFtoC8_1kXiL32/view?usp=sharing), [MobileNetv2](https://drive.google.com/file/d/15D_zp42yUfhqOO1VFiNTZGhstJr29uda/view?usp=sharing), [DenseNet](https://drive.google.com/file/d/1-5TYQhn7cpdZsjplYhwdKGKr_bq7VQ-1/view?usp=sharing), or [SqueezeNet](https://drive.google.com/file/d/1-Ae37WXvLRF2ZBAVbVNJpC7hecTkcgQo/view?usp=sharing) feature extractors (weights through hyperlinks). You just need to specify the directory of your testing images and model weights. 
 
     !python3 eval.py --device=0 --featureExt='resnet50' --test_Dir= './data/part2' \
       --ckpt_Dir='./exp1_ckpt.pth' --results_Dir='./res'
  
   B. **Training:** 
   
-  You can train the model using our custom dataset based on [SICE Part 1](), and using any of the extractors mentioned above. You just need to specify the directories for the low and normal light images.
+  You can train the model using our [custom dataset]() based on SICE Part 1, and using any of the extractors mentioned above. You just need to specify the directories for the low and normal light images.
   
     !python3 train.py --device=0 --experiment='expT' --featureExt='squeezenet' \
       --base_Dir='./data/part1' --gt_Dir='./gt' \
@@ -23,7 +23,7 @@ Low Light Homomorphic filtering Network
 # Enhancer Classifer
   A. 	**Testing:**
   
-  You need to specify the directory of the test images and model weights. You can find our custom [Pascal VOC]() and [ExDark]() evaluation datasets through the hyperlinks. 
+  You need to specify the directory of the test images and [model weights] (https://drive.google.com/file/d/1-MbNOd2pkz8l6HeFVWQIPyvGTLxazaAF/view?usp=sharing). You can find our custom [Pascal VOC]() and [ExDark]() evaluation datasets through the hyperlinks. 
 
 
     !python3 eval.py --device=0  --test_Dir='./data' \
