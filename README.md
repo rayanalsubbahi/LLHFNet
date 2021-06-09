@@ -14,7 +14,7 @@ Low Light Homomorphic filtering Network
  
   B. **Training:** 
   
-  You can train the model using our [custom dataset]() based on SICE Part 1, and using any of the extractors mentioned above. You just need to specify the directories for the low and normal light images.
+  You can train the model using our [custom dataset](https://drive.google.com/drive/folders/1hMXkSCr7kj9AY22DkWbhJ7GJUa6RwApO?usp=sharing) based on SICE Part 1, and using any of the extractors mentioned above. You just need to specify the directories for the low and normal light images.
   
     !python3 train.py --device=0 --experiment='expT' --featureExt='squeezenet' \
       --base_Dir='./data/part1' --gt_Dir='./gt' \
@@ -23,7 +23,7 @@ Low Light Homomorphic filtering Network
 # Enhancer Classifer
   A. 	**Testing:**
   
-  You need to specify the directory of the test images and [model weights] (https://drive.google.com/file/d/1-MbNOd2pkz8l6HeFVWQIPyvGTLxazaAF/view?usp=sharing). You can find our custom [Pascal VOC]() and [ExDark]() evaluation datasets through the hyperlinks. 
+  You need to specify the directory of the test images and [model weights](https://drive.google.com/file/d/1-MbNOd2pkz8l6HeFVWQIPyvGTLxazaAF/view?usp=sharing). You can find our custom [Pascal VOC](https://drive.google.com/drive/folders/1HqXNWhmewNQ8WJp4gzVLjJL7YHQt4nP6?usp=sharing) and [ExDark](https://drive.google.com/drive/folders/17kKu5ci0ifIFmSdv9_myWRveynigtWvV?usp=sharing) evaluation datasets through the hyperlinks. 
 
 
     !python3 eval.py --device=0  --test_Dir='./data' \
@@ -33,7 +33,7 @@ Low Light Homomorphic filtering Network
       
   B. **Training:** 
 
-  You can train the model using our [custom dataset]() based on Pascl VOC. 
+  You can train the model using our [custom dataset](https://drive.google.com/drive/folders/1SSPyP5-aY9fav6SS6KnknfCa1YsV2rMG?usp=sharing) based on Pascl VOC. 
   Our dataset is serialized into tfRecords. You can find in TFRecords.py the codes for serializing and deserializing the dataset. 
 
     !python3 train.py --device=0 --experiment='expT' \
