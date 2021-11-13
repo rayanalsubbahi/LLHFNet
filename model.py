@@ -36,7 +36,7 @@ class MobileNetv2(nn.Module):
 #vgg16
 class VGG16(nn.Module):
   def __init__(self):
-    super(vgg16, self).__init__()
+    super(VGG16, self).__init__()
     self.vgg16 = torch.hub.load('pytorch/vision:v0.6.0', 'vgg16_bn', pretrained=True)
     features = list (self.vgg16.features)[1:]
     first_conv_layer = [nn.Conv2d(1, 64, kernel_size=3, stride=1, padding=1, dilation=1, groups=1, bias=True)]
